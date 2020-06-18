@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Index</title>
+<title>DvD Cover</title>
 <style type="text/css">
 <!--
 body {
@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
 	padding-right: 15px;
 	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	color: #000;
 }
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
@@ -29,12 +30,13 @@ a img { /* this selector removes the default blue border displayed in some brows
 
 /* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
 a:link {
-	color: #2D0A74;
+	color: #42413C;
 	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
 }
 a:visited {
-	color: #5B0FC4;
+	color: #E3C8FB;
 	text-decoration: underline;
+	background-color: #CCB9DB;
 }
 a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
 	text-decoration: none;
@@ -49,7 +51,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 /* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
 .header {
-	background: #ADB96E;
+	background: #CCB9DB;
 }
 
 /* ~~ These are the columns for the layout. ~~ 
@@ -66,8 +68,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .sidebar1 {
 	float: left;
 	width: 180px;
-	background: #EADCAE;
 	padding-bottom: 10px;
+	background-color: #E3C8FB;
 }
 .content {
 
@@ -95,19 +97,20 @@ ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your li
 	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
 	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
 	text-decoration: none;
-	background-color: #F4BEFC;
+	background: #C6D580;
 }
 ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #E3C8FB;
 	color: #FFF;
-	background-color: #E3C8FB;
 }
 
 /* ~~ The footer ~~ */
 .footer {
 	padding: 10px 0;
+	background: #CCC49F;
 	position: relative;/* this gives IE6 hasLayout to properly clear */
 	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
-	background-color: #EBCDFC;
+	background-color: #E3C8FB;
 }
 
 /* ~~ miscellaneous float/clear classes ~~ */
@@ -128,28 +131,24 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 -->
 </style></head>
 
-<body bgcolor="#CCCCFF" text="#000000" link="#32036B" vlink="#69099D" alink="#D6D6D6">
+<body>
 
 <div class="container">
-  <div class="header"><a href="#"><img src="Capture.PNG" alt="Insert Logo Here" name="Insert_logo" width="963" height="241" id="Insert_logo" style="background: #C6D580; display:block;" /></a> 
+  <div class="header"><a href="#"><img src="1200px-Adobe_Photoshop_CC_icon.svg.png" alt="Insert Logo Here" name="Insert_logo" width="180" height="180" id="Insert_logo" style="background: #C6D580; display:block;" /></a> 
     <!-- end .header --></div>
   <div class="sidebar1">
     <ul class="nav">
-      <li><a href="photoshop.html">Photoshop</a><a href="DvD Cover.html">DvD Cover</a></li>
-      <li><a href="Menu.html">Menu</a>
+      <li><a href="index.html">Back to Homepage</a></li>
     </ul>
-  </div>
+  <!-- end .sidebar1 --></div>
   <div class="content">
-    <h1>Main Heading</h1>
-    <p>This is my awesome website</p>
-    <h2>Secound Method</h2>
-    <p>This is another bit about space</p>
-    <h3>Smaller Headings</h3>
-    <p>I can type whatever I like here</p>
-    <!-- end .content --></div>
+    <h1>Menu Assignment</h1>
+    <img src="Menu - Front.jpg" width="700" height="596" alt=""/>    <img src="Menu - Back.jpg" width="700" height="588" alt=""/>
+    <p><!-- end .content --></p>
+</div>
   <div class="footer">
-    <p class="footer">&nbsp;</p>
-  </div>
-<!-- end .container --></div>
+    <p>&nbsp;</p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
 </body>
 </html>
